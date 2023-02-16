@@ -9,37 +9,20 @@
 </head>
 
 <body style="background-image: url('Imagenes/fondo.jpg'); background-repeat: no-repeat; background-size: cover;">
-		</br></br></br>
-		<div id="fixed">
-			</br></br></br>
-			<div style="padding-left:510px;">
-				<img src="Imagenes/selloespe.jpg" alt="ESPE" height="150" >
-			</div>
-		</br>
-			<center>
-				<h2>
-					<p>DEPARTAMENTO DE CIENCIAS DE LA COMPUTACIÓN</p>
-					<p>INGENIERÍA EN TECNOLOGIAS</p>
-				</h2>
-				<h3>
-					<p>APLICACIONES DE TECNOLOGIAS WEB - EJERCICIO AUTONOMO</p>
-				</h3>
-			</center>
-			<div style="padding-left:90px;">
-				<h3><p>Integrante: Francisco Ocaña</p></h3>
-				<h3><p>NRC: 8444</p></h3>
-				<h3><p>Fecha: 16 de Febrero del 2023</p></h3>
-				
-			</div>						
-		</div> 
+	</br></br></br></br></br></br></br></br></br></br></br></br>
 
+	<center><h1>TRABAJO AUTONOMO</h1></center>
 	<?php
+
+
+
 		include("include/class.figura.php");
 		include("include/Interface.formulas.php");
 		include("figuras/class.cuadrado.php");
 		include("figuras/class.rectangulo.php");
 		include("figuras/class.triangulo.php");
 		
+		// METODO GET 
 		if(isset($_GET['calcular'])){
 			switch($_GET['tipo']){
 				case "cuadrado": 
@@ -56,6 +39,11 @@
 
 		echo figura::get_form();
 		
+
 	?>
+	</br></br>
+	<center>
+	<button onclick="window.location.href='index.html'">Menu principal</button>
+	</center>
 </body>
 </html>
